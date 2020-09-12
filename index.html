@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://github.com/jeromeetienne/AR.js/blob/master/aframe/build/aframe-ar.min.js"></script>
+    <title>AR A-frame test</title>
+</head>
+<body>
+    <h1>ARJS & A-FRAME</h1>
+    <a-scene embendded arjs>
+        <a-entity scale=".2 .2 2">
+            <a-entity 
+                gltf-model="monkey.gltf" 
+                scale="1 1 1" 
+                crossOrigin="anonymous">
+        </a-entity>
+        <a-marker-camara preset='pattern-img1'></a-marker-camara>
+    </a-scene>
+</body>
+</html>
